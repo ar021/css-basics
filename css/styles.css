@@ -1,0 +1,30 @@
+body {
+    font-family: "Arial";
+    margin: 15px;
+    /* conflicts with earlier inline-styling */
+}
+  
+h1 {
+    text-align: center;  /* conflicts with the internal stylesheet */
+}
+
+div {
+    color: blue;
+}
+
+#comments-title {
+    font-size: 28px;
+}
+#comments-title::first-letter {
+    font-size: 60px;
+}
+
+li.super-cool {
+    border: solid 2px red;
+}
+div.crazy p {
+    color: yellow;
+}
+li:hover {
+    cursor: pointer;
+}
